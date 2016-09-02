@@ -6,6 +6,16 @@ weight=1
 
 # Release Notes
 
+## 2.0.0-SNAPSHOT
+
+### 新功能
+
+1. Elastic-Job-Cloud初始版本
+1. 重构原Elastic-Job至Elastic-Job-Lite
+
+### 缺陷修正
+1. [ISSUE #123](https://github.com/dangdangdotcom/elastic-job/issues/123) 单机跑定时任务，zk断开后重连，没有触发leader选举 
+
 ## 1.1.1
 
 ### 结构调整
@@ -23,7 +33,7 @@ weight=1
 
 ### 结构调整
 
-1. [ISSUE #97](https://github.com/dangdangdotcom/elastic-job/issues/97) JobConfiguration重构为SimpleJobConfiguration，DataFlowJobConfiguration，ScriptJobConfiguration
+1. [ISSUE #97](https://github.com/dangdangdotcom/elastic-job/issues/97) JobConfiguration重构为SimpleJobConfiguration，DataflowJobConfiguration，ScriptJobConfiguration
 1. [ISSUE #102](https://github.com/dangdangdotcom/elastic-job/issues/102) 重新定义Java/Spring Config API，使用Factory+Builder模式代替原有的Constructor+Setter模式
 1. [ISSUE #104](https://github.com/dangdangdotcom/elastic-job/issues/104) 移除@Deprecated代码
 1. [ISSUE #105](https://github.com/dangdangdotcom/elastic-job/issues/105) 重构Spring命名空间驼峰式定义
@@ -74,7 +84,7 @@ weight=1
 ### 功能提升
 
 1. [ISSUE #2](https://github.com/dangdangdotcom/elastic-job/issues/2) 增加前置和后置任务
-1. [ISSUE #60](https://github.com/dangdangdotcom/elastic-job/issues/60) 可于DataFlow类型作业定制化线程池配置
+1. [ISSUE #60](https://github.com/dangdangdotcom/elastic-job/issues/60) 可于Dataflow类型作业定制化线程池配置
 1. [ISSUE #62](https://github.com/dangdangdotcom/elastic-job/issues/61) 作业状态清理提速
 1. [ISSUE #65](https://github.com/dangdangdotcom/elastic-job/issues/65) 增加前置和后置任务Spring命名空间支持
 
@@ -92,7 +102,7 @@ weight=1
 
 ### 功能提升
 1. [ISSUE #16](https://github.com/dangdangdotcom/elastic-job/issues/16) 提供内嵌zookeeper，简化开发环境
-1. [ISSUE #28](https://github.com/dangdangdotcom/elastic-job/issues/28) DataFlow类型作业增加`processData`批量处理数据的方法
+1. [ISSUE #28](https://github.com/dangdangdotcom/elastic-job/issues/28) Dataflow类型作业增加`processData`批量处理数据的方法
 1. [ISSUE #56](https://github.com/dangdangdotcom/elastic-job/issues/56) 作业自定义参数设置
 
 ### 结构调整
@@ -134,7 +144,7 @@ weight=1
 
 ### 结构调整
 
-1. [ISSUE #17](https://github.com/dangdangdotcom/elastic-job/issues/17) 作业类型接口变更，参见[1.0.2升级说明](http://dangdangdotcom.github.io/elastic-job/post/update_notes_1.0.2/)
+1. [ISSUE #17](https://github.com/dangdangdotcom/elastic-job/issues/17) 作业类型接口变更
 
 ## 1.0.1
 1. 初始版本
